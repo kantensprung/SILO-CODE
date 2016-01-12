@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendJSON="http://www.talend.org/json" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010" xmlns:orgomg.cwm.resource.record="http:///orgomg/cwm/resource/record.ecore">
+  <TalendJSON:JSONFileConnection xmi:id="_HqzCcEf7EeWTjNHxD9Y_BA" name="STAGE_ListSites" dataPackage="_HqzpkEf7EeWTjNHxD9Y_BA" JSONFilePath="P:/Kantensprung/DWH_Silo-Solaranlage/JSON-examples/01-template.json" Encoding="UTF-8" inputModel="false">
+    <root xmi:id="_HqzCcUf7EeWTjNHxD9Y_BA" JSONPath="/root" RelatedColumn="" Attribute="main" Order="177" Type="id_String"/>
+    <root xmi:id="_HqzCckf7EeWTjNHxD9Y_BA" JSONPath="/root/stageRequest" RelatedColumn="" Attribute="branch" Order="178" Type="id_String"/>
+    <root xmi:id="_HqzCc0f7EeWTjNHxD9Y_BA" JSONPath="/root/stageRequest/runID" RelatedColumn="runID" Attribute="branch" Order="179" Type="id_Integer"/>
+    <root xmi:id="_HqzCdEf7EeWTjNHxD9Y_BA" JSONPath="/root/stageRequest/timestamp" RelatedColumn="timestamp" Attribute="branch" Order="180" Type="id_Date"/>
+    <root xmi:id="_HqzCdUf7EeWTjNHxD9Y_BA" JSONPath="/root/stageRequest/jobName" RelatedColumn="jobName" Attribute="branch" Order="181" Type="id_String"/>
+    <root xmi:id="_HqzCdkf7EeWTjNHxD9Y_BA" JSONPath="/root/stageRequest/status" RelatedColumn="status" Attribute="branch" Order="182" Type="id_String"/>
+    <root xmi:id="_HqzCd0f7EeWTjNHxD9Y_BA" JSONPath="/root/stageRequest/parameter" RelatedColumn="" Attribute="branch" Order="183" Type="id_String"/>
+    <root xmi:id="_HqzCeEf7EeWTjNHxD9Y_BA" JSONPath="/root/stageRequest/parameter/name" RelatedColumn="name" Attribute="branch" Order="184" Type="id_String"/>
+    <root xmi:id="_HqzCeUf7EeWTjNHxD9Y_BA" JSONPath="/root/stageRequest/parameter/value" RelatedColumn="value" Attribute="branch" Order="185" Type="id_Date"/>
+    <root xmi:id="_HqzCekf7EeWTjNHxD9Y_BA" JSONPath="/root/sites" RelatedColumn="" Attribute="main" Order="186" Type="id_String"/>
+    <root xmi:id="_HqzCe0f7EeWTjNHxD9Y_BA" JSONPath="/root/sites/count" RelatedColumn="count" Attribute="branch" Order="187" Type="id_Integer"/>
+    <loop xmi:id="_HqzCfEf7EeWTjNHxD9Y_BA" JSONPath="/root/sites/site" RelatedColumn="" Attribute="main" Order="188" Type="id_String"/>
+    <loop xmi:id="_HqzCfUf7EeWTjNHxD9Y_BA" JSONPath="/root/sites/site/id" RelatedColumn="id" Attribute="branch" Order="189" Type="id_Integer"/>
+    <loop xmi:id="_HqzCfkf7EeWTjNHxD9Y_BA" JSONPath="/root/sites/site/name" RelatedColumn="name1" Attribute="branch" Order="190" Type="id_String"/>
+    <loop xmi:id="_HqzCf0f7EeWTjNHxD9Y_BA" JSONPath="/root/sites/site/accountId" RelatedColumn="accountId" Attribute="branch" Order="191" Type="id_Integer"/>
+    <loop xmi:id="_HqzCgEf7EeWTjNHxD9Y_BA" JSONPath="/root/sites/site/status" RelatedColumn="status1" Attribute="branch" Order="192" Type="id_String"/>
+    <loop xmi:id="_HqzCgUf7EeWTjNHxD9Y_BA" JSONPath="/root/sites/site/peakPower" RelatedColumn="peakPower" Attribute="branch" Order="193" Type="id_Float"/>
+    <loop xmi:id="_HqzCgkf7EeWTjNHxD9Y_BA" JSONPath="/root/sites/site/lastUpdateTime" RelatedColumn="lastUpdateTime" Attribute="branch" Order="194" Type="id_Date"/>
+    <loop xmi:id="_HqzCg0f7EeWTjNHxD9Y_BA" JSONPath="/root/sites/site/currency" RelatedColumn="currency" Attribute="branch" Order="195" Type="id_String"/>
+    <loop xmi:id="_HqzChEf7EeWTjNHxD9Y_BA" JSONPath="/root/sites/site/installationDate" RelatedColumn="installationDate" Attribute="branch" Order="196" Type="id_Date"/>
+    <loop xmi:id="_HqzChUf7EeWTjNHxD9Y_BA" JSONPath="/root/sites/site/notes" RelatedColumn="notes" Attribute="branch" Order="197" Type="id_String"/>
+    <loop xmi:id="_HqzChkf7EeWTjNHxD9Y_BA" JSONPath="/root/sites/site/type" RelatedColumn="type" Attribute="branch" Order="198" Type="id_String"/>
+    <loop xmi:id="_HqzCh0f7EeWTjNHxD9Y_BA" JSONPath="/root/sites/site/location" RelatedColumn="" Attribute="branch" Order="199" Type="id_String"/>
+    <loop xmi:id="_HqzCiEf7EeWTjNHxD9Y_BA" JSONPath="/root/sites/site/location/country" RelatedColumn="country" Attribute="branch" Order="200" Type="id_String"/>
+    <loop xmi:id="_HqzCiUf7EeWTjNHxD9Y_BA" JSONPath="/root/sites/site/location/city" RelatedColumn="city" Attribute="branch" Order="201" Type="id_String"/>
+    <loop xmi:id="_HqzCikf7EeWTjNHxD9Y_BA" JSONPath="/root/sites/site/location/address" RelatedColumn="address" Attribute="branch" Order="202" Type="id_String"/>
+    <loop xmi:id="_HqzCi0f7EeWTjNHxD9Y_BA" JSONPath="/root/sites/site/location/address2" RelatedColumn="address2" Attribute="branch" Order="203" Type="id_String"/>
+    <loop xmi:id="_HqzCjEf7EeWTjNHxD9Y_BA" JSONPath="/root/sites/site/location/zip" RelatedColumn="zip" Attribute="branch" Order="204" Type="id_Integer"/>
+    <loop xmi:id="_HqzpgEf7EeWTjNHxD9Y_BA" JSONPath="/root/sites/site/location/timeZone" RelatedColumn="timeZone" Attribute="branch" Order="205" Type="id_String"/>
+    <loop xmi:id="_HqzpgUf7EeWTjNHxD9Y_BA" JSONPath="/root/sites/site/location/countryCode" RelatedColumn="countryCode" Attribute="branch" Order="206" Type="id_String"/>
+    <loop xmi:id="_Hqzpgkf7EeWTjNHxD9Y_BA" JSONPath="/root/sites/site/primaryModule" RelatedColumn="" Attribute="branch" Order="207" Type="id_String"/>
+    <loop xmi:id="_Hqzpg0f7EeWTjNHxD9Y_BA" JSONPath="/root/sites/site/primaryModule/manufacturerName" RelatedColumn="manufacturerName" Attribute="branch" Order="208" Type="id_String"/>
+    <loop xmi:id="_HqzphEf7EeWTjNHxD9Y_BA" JSONPath="/root/sites/site/primaryModule/modelName" RelatedColumn="modelName" Attribute="branch" Order="209" Type="id_String"/>
+    <loop xmi:id="_HqzphUf7EeWTjNHxD9Y_BA" JSONPath="/root/sites/site/primaryModule/maximumPower" RelatedColumn="maximumPower" Attribute="branch" Order="210" Type="id_Float"/>
+    <loop xmi:id="_Hqzphkf7EeWTjNHxD9Y_BA" JSONPath="/root/sites/site/uris" RelatedColumn="" Attribute="branch" Order="211" Type="id_String"/>
+    <loop xmi:id="_Hqzph0f7EeWTjNHxD9Y_BA" JSONPath="/root/sites/site/uris/DATA_PERIOD" RelatedColumn="DATA_PERIOD" Attribute="branch" Order="212" Type="id_String"/>
+    <loop xmi:id="_HqzpiEf7EeWTjNHxD9Y_BA" JSONPath="/root/sites/site/uris/PUBLIC_URL" RelatedColumn="PUBLIC_URL" Attribute="branch" Order="213" Type="id_String"/>
+    <loop xmi:id="_HqzpiUf7EeWTjNHxD9Y_BA" JSONPath="/root/sites/site/uris/INSTALLER_IMAGE" RelatedColumn="INSTALLER_IMAGE" Attribute="branch" Order="214" Type="id_String"/>
+    <loop xmi:id="_Hqzpikf7EeWTjNHxD9Y_BA" JSONPath="/root/sites/site/uris/OVERVIEW" RelatedColumn="OVERVIEW" Attribute="branch" Order="215" Type="id_String"/>
+    <loop xmi:id="_Hqzpi0f7EeWTjNHxD9Y_BA" JSONPath="/root/sites/site/uris/SITE_IMAGE" RelatedColumn="SITE_IMAGE" Attribute="branch" Order="216" Type="id_String"/>
+    <loop xmi:id="_HqzpjEf7EeWTjNHxD9Y_BA" JSONPath="/root/sites/site/uris/DETAILS" RelatedColumn="DETAILS" Attribute="branch" Order="217" Type="id_String"/>
+    <loop xmi:id="_HqzpjUf7EeWTjNHxD9Y_BA" JSONPath="/root/sites/site/publicSettings" RelatedColumn="" Attribute="branch" Order="218" Type="id_String"/>
+    <loop xmi:id="_Hqzpjkf7EeWTjNHxD9Y_BA" JSONPath="/root/sites/site/publicSettings/name" RelatedColumn="name2" Attribute="branch" Order="219" Type="id_String"/>
+    <loop xmi:id="_Hqzpj0f7EeWTjNHxD9Y_BA" JSONPath="/root/sites/site/publicSettings/isPublic" RelatedColumn="isPublic" Attribute="branch" Order="220" Type="id_Boolean"/>
+  </TalendJSON:JSONFileConnection>
+  <orgomg.cwm.resource.record:RecordFile xmi:id="_HqzpkEf7EeWTjNHxD9Y_BA" name="default" dataManager="_HqzCcEf7EeWTjNHxD9Y_BA">
+    <ownedElement xsi:type="TalendMetadata:MetadataTable" xmi:id="_HqzpkUf7EeWTjNHxD9Y_BA" id="_woFUwEf6EeWTjNHxD9Y_BA" label="metadata">
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_Hqzpkkf7EeWTjNHxD9Y_BA" name="runID" label="runID" talendType="id_Integer"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_Hqzpk0f7EeWTjNHxD9Y_BA" name="timestamp" label="timestamp" talendType="id_Date"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_HqzplEf7EeWTjNHxD9Y_BA" name="jobName" label="jobName" talendType="id_String"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_HqzplUf7EeWTjNHxD9Y_BA" name="status" label="status" talendType="id_String"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_Hqzplkf7EeWTjNHxD9Y_BA" name="name" label="name" talendType="id_String"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_Hqzpl0f7EeWTjNHxD9Y_BA" name="value" label="value" talendType="id_Date"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_HqzpmEf7EeWTjNHxD9Y_BA" name="count" label="count" talendType="id_Integer"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_Hq0QkEf7EeWTjNHxD9Y_BA" name="id" label="id" talendType="id_Integer"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_Hq0QkUf7EeWTjNHxD9Y_BA" name="name" label="name1" talendType="id_String"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_Hq0Qkkf7EeWTjNHxD9Y_BA" name="accountId" label="accountId" talendType="id_Integer"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_Hq0Qk0f7EeWTjNHxD9Y_BA" name="status" label="status1" talendType="id_String"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_Hq0QlEf7EeWTjNHxD9Y_BA" name="peakPower" label="peakPower" talendType="id_Float"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_Hq0QlUf7EeWTjNHxD9Y_BA" name="lastUpdateTime" label="lastUpdateTime" talendType="id_Date"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_Hq0Qlkf7EeWTjNHxD9Y_BA" name="currency" label="currency" talendType="id_String"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_Hq0Ql0f7EeWTjNHxD9Y_BA" name="installationDate" label="installationDate" talendType="id_Date"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_Hq0QmEf7EeWTjNHxD9Y_BA" name="notes" label="notes" talendType="id_String"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_Hq0QmUf7EeWTjNHxD9Y_BA" name="type" label="type" talendType="id_String"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_Hq0Qmkf7EeWTjNHxD9Y_BA" name="country" label="country" talendType="id_String"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_Hq0Qm0f7EeWTjNHxD9Y_BA" name="city" label="city" talendType="id_String"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_Hq0QnEf7EeWTjNHxD9Y_BA" name="address" label="address" talendType="id_String"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_Hq0QnUf7EeWTjNHxD9Y_BA" name="address2" label="address2" talendType="id_String"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_Hq0Qnkf7EeWTjNHxD9Y_BA" name="zip" label="zip" talendType="id_Integer"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_Hq0Qn0f7EeWTjNHxD9Y_BA" name="timeZone" label="timeZone" talendType="id_String"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_Hq0QoEf7EeWTjNHxD9Y_BA" name="countryCode" label="countryCode" talendType="id_String"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_Hq0QoUf7EeWTjNHxD9Y_BA" name="manufacturerName" label="manufacturerName" talendType="id_String"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_Hq0Qokf7EeWTjNHxD9Y_BA" name="modelName" label="modelName" talendType="id_String"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_Hq0Qo0f7EeWTjNHxD9Y_BA" name="maximumPower" label="maximumPower" talendType="id_Float"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_Hq0QpEf7EeWTjNHxD9Y_BA" name="DATA_PERIOD" label="DATA_PERIOD" talendType="id_String"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_Hq0QpUf7EeWTjNHxD9Y_BA" name="PUBLIC_URL" label="PUBLIC_URL" talendType="id_String"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_Hq0Qpkf7EeWTjNHxD9Y_BA" name="INSTALLER_IMAGE" label="INSTALLER_IMAGE" talendType="id_String"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_Hq0Qp0f7EeWTjNHxD9Y_BA" name="OVERVIEW" label="OVERVIEW" talendType="id_String"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_Hq03oEf7EeWTjNHxD9Y_BA" name="SITE_IMAGE" label="SITE_IMAGE" talendType="id_String"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_Hq03oUf7EeWTjNHxD9Y_BA" name="DETAILS" label="DETAILS" talendType="id_String"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_Hq03okf7EeWTjNHxD9Y_BA" name="name" label="name2" talendType="id_String"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_Hq03o0f7EeWTjNHxD9Y_BA" name="isPublic" label="isPublic" talendType="id_Boolean"/>
+    </ownedElement>
+  </orgomg.cwm.resource.record:RecordFile>
+</xmi:XMI>

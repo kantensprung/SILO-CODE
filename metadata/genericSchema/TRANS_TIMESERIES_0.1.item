@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010">
+  <TalendMetadata:GenericSchemaConnection xmi:id="_Z0g1oFVIEeWLp9nROXk_Mw" comment="connectionComment" label="connectionLabel" dataPackage="_Z0g1oVVIEeWLp9nROXk_Mw"/>
+  <TalendMetadata:GenericPackage xmi:id="_Z0g1oVVIEeWLp9nROXk_Mw" dataManager="_Z0g1oFVIEeWLp9nROXk_Mw">
+    <ownedElement xsi:type="TalendMetadata:MetadataTable" xmi:id="_Z0g1olVIEeWLp9nROXk_Mw" label="metadata">
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_Z0g1o1VIEeWLp9nROXk_Mw" name="siteId" id="2326" label="siteId" sourceType="" talendType="id_Integer">
+        <initialValue xmi:id="_Z0g1pFVIEeWLp9nROXk_Mw"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_Z0g1pVVIEeWLp9nROXk_Mw" name="siteName" id="2327" label="siteName" sourceType="" talendType="id_String">
+        <initialValue xmi:id="_Z0g1plVIEeWLp9nROXk_Mw"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_Z0g1p1VIEeWLp9nROXk_Mw" name="siteStatus" id="2328" label="siteStatus" sourceType="" talendType="id_String">
+        <initialValue xmi:id="_Z0g1qFVIEeWLp9nROXk_Mw"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_Z0g1qVVIEeWLp9nROXk_Mw" name="tsName" id="2329" label="tsName" sourceType="" talendType="id_String">
+        <initialValue xmi:id="_Z0g1qlVIEeWLp9nROXk_Mw" body="Power"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_Z0hcsFVIEeWLp9nROXk_Mw" name="tsDate" id="2330" label="tsDate" sourceType="" talendType="id_Date" pattern="&quot;yyyy-MM-dd HH:mm:ss&quot;">
+        <initialValue xmi:id="_Z0hcsVVIEeWLp9nROXk_Mw"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_Z0hcslVIEeWLp9nROXk_Mw" name="tsValue" id="2331" label="tsValue" sourceType="" talendType="id_Double">
+        <initialValue xmi:id="_Z0hcs1VIEeWLp9nROXk_Mw"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_Z0hctFVIEeWLp9nROXk_Mw" name="tsUnit" id="2332" label="tsUnit" sourceType="" talendType="id_String">
+        <initialValue xmi:id="_Z0hctVVIEeWLp9nROXk_Mw"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_Z0hctlVIEeWLp9nROXk_Mw" name="tsTimeUnit" id="2333" label="tsTimeUnit" sourceType="" talendType="id_String">
+        <initialValue xmi:id="_Z0hct1VIEeWLp9nROXk_Mw"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_Z0hcuFVIEeWLp9nROXk_Mw" name="loadDate" id="2334" label="loadDate" sourceType="" talendType="id_Date" nullable="false" pattern="&quot;yyyy-MM-dd HH:mm:ss&quot;">
+        <initialValue xmi:id="_Z0hcuVVIEeWLp9nROXk_Mw"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_Z0hculVIEeWLp9nROXk_Mw" name="loadId" id="2335" label="loadId" sourceType="" talendType="id_Integer">
+        <initialValue xmi:id="_Z0hcu1VIEeWLp9nROXk_Mw"/>
+      </feature>
+    </ownedElement>
+  </TalendMetadata:GenericPackage>
+</xmi:XMI>

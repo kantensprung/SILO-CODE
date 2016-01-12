@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<talendfile:ContextType xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" confirmationNeeded="false" name="Default">
+  <contextParameter comment="" name="loadCassandra" prompt="loadCassandra?" promptNeeded="false" type="id_Integer" value="1"/>
+  <contextParameter comment="" name="loadElasticsearch" prompt="loadElasticsearch?" promptNeeded="false" type="id_Integer" value="1"/>
+</talendfile:ContextType>

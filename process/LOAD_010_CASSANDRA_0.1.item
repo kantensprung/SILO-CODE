@@ -1,0 +1,1142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<talendfile:ProcessType xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" defaultContext="Default">
+  <context confirmationNeeded="false" name="Default">
+    <contextParameter comment="" name="cassandraKeyspace" prompt="cassandraKeyspace?" promptNeeded="false" repositoryContextId="_OWBgYFYJEeWtCf07V_v1Iw" type="id_String" value="&quot;silo_dev&quot;"/>
+    <contextParameter comment="" name="cassandraPort" prompt="cassandraPort?" promptNeeded="false" repositoryContextId="_OWBgYFYJEeWtCf07V_v1Iw" type="id_String" value="&quot;9042&quot;"/>
+    <contextParameter comment="" name="cassandraServer" prompt="cassandraServer?" promptNeeded="false" repositoryContextId="_OWBgYFYJEeWtCf07V_v1Iw" type="id_String" value="&quot;localhost&quot;"/>
+    <contextParameter comment="" name="sendMailFrom" prompt="sendMailFrom?" promptNeeded="false" repositoryContextId="_PP_k4Er-EeWb1fyRPuDglg" type="id_String" value="kasp.silo@irix.ch"/>
+    <contextParameter comment="" name="sendMailSMTPHost" prompt="sendMailSMTPHost?" promptNeeded="false" repositoryContextId="_PP_k4Er-EeWb1fyRPuDglg" type="id_String" value="mail.irix.intra"/>
+    <contextParameter comment="" name="sendMailSMTPPort" prompt="sendMailSMTPPort?" promptNeeded="false" repositoryContextId="_PP_k4Er-EeWb1fyRPuDglg" type="id_String" value="25"/>
+    <contextParameter comment="" name="sendMailTo" prompt="sendMailTo?" promptNeeded="false" repositoryContextId="_PP_k4Er-EeWb1fyRPuDglg" type="id_String" value="kasp.silo@irix.ch"/>
+    <contextParameter comment="" name="pathApplication" prompt="pathApplication?" promptNeeded="false" repositoryContextId="_p2lfwEceEeWV44u7UimgGQ" type="id_String" value="C:/_archive/dev"/>
+    <contextParameter comment="" name="pathStagingFiles" prompt="pathStagingFiles?" promptNeeded="false" repositoryContextId="_p2lfwEceEeWV44u7UimgGQ" type="id_String" value="C:/_archive/dev"/>
+    <contextParameter comment="" name="l_input_TRANS_EQUIPMENT_DETAILS" prompt="l_input_TRANS_EQUIPMENT_DETAILS?" promptNeeded="false" type="id_String" value="20150908_TRANS_EQUIPMENT_DETAILS_t1_00066.json"/>
+    <contextParameter comment="" name="l_input_TRANS_TIMESERIES" prompt="l_input_TRANS_TIMESERIES?" promptNeeded="false" type="id_String" value="20150908_TRANS_TIMESERIES_t1_00066.json"/>
+    <contextParameter comment="" name="l_returnValue" prompt="l_returnValue?" promptNeeded="false" type="id_Integer" value="0"/>
+  </context>
+  <parameters>
+    <elementParameter field="TEXT" name="SCREEN_OFFSET_X" value="0" show="false"/>
+    <elementParameter field="TEXT" name="SCREEN_OFFSET_Y" value="0" show="false"/>
+    <elementParameter field="TEXT" name="REPOSITORY_CONNECTION_ID" value="" show="false"/>
+    <elementParameter field="CHECK" name="IMPLICITCONTEXT_USE_PROJECT_SETTINGS" value="true" show="false"/>
+    <elementParameter field="CHECK" name="STATANDLOG_USE_PROJECT_SETTINGS" value="true" show="false"/>
+    <elementParameter field="CHECK" name="MULTI_THREAD_EXECATION" value="false"/>
+    <elementParameter field="CHECK" name="IMPLICIT_TCONTEXTLOAD" value="false"/>
+    <elementParameter field="RADIO" name="FROM_FILE_FLAG_IMPLICIT_CONTEXT" value="false" show="false"/>
+    <elementParameter field="RADIO" name="FROM_DATABASE_FLAG_IMPLICIT_CONTEXT" value="false" show="false"/>
+    <elementParameter field="FILE" name="IMPLICIT_TCONTEXTLOAD_FILE" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY_TYPE_IMPLICIT_CONTEXT:PROPERTY_TYPE" value="" show="false"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY_TYPE_IMPLICIT_CONTEXT:REPOSITORY_PROPERTY_TYPE" value="" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_TYPE_IMPLICIT_CONTEXT" value="" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION_IMPLICIT_CONTEXT" value="" show="false"/>
+    <elementParameter field="TEXT" name="URL_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TABLE" name="DRIVER_JAR_IMPLICIT_CONTEXT" show="false"/>
+    <elementParameter field="TEXT" name="DRIVER_CLASS_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="HOST_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="PORT_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="DBNAME_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="PROPERTIES_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="USER_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" value="0RMsyjmybrE=" show="false"/>
+    <elementParameter field="FILE" name="DBFILE_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="DBTABLE" name="DBTABLE_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="QUERY_CONDITION_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="LOAD_NEW_VARIABLE" value="Warning" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="NOT_LOAD_OLD_VARIABLE" value="Warning" show="false"/>
+    <elementParameter field="CHECK" name="PRINT_OPERATIONS" value="false" show="false"/>
+    <elementParameter field="CHECK" name="DISABLE_ERROR" value="false" show="false"/>
+    <elementParameter field="CHECK" name="DISABLE_WARNINGS" value="false" show="false"/>
+    <elementParameter field="CHECK" name="DISABLE_INFO" value="false" show="false"/>
+    <elementParameter field="CHECK" name="ON_STATCATCHER_FLAG" value="false"/>
+    <elementParameter field="CHECK" name="ON_LOGCATCHER_FLAG" value="false"/>
+    <elementParameter field="CHECK" name="ON_METERCATCHER_FLAG" value="false"/>
+    <elementParameter field="CHECK" name="ON_CONSOLE_FLAG" value="false" show="false"/>
+    <elementParameter field="CHECK" name="ON_FILES_FLAG" value="false" show="false"/>
+    <elementParameter field="DIRECTORY" name="FILE_PATH" value="&quot;C:/Talend/TOS_BD-20150702_1326-V6.0.0/workspace/.metadata&quot;" show="false"/>
+    <elementParameter field="TEXT" name="FILENAME_STATS" value="&quot;stats_file.txt&quot;" show="false"/>
+    <elementParameter field="TEXT" name="FILENAME_LOGS" value="&quot;logs_file.txt&quot;" show="false"/>
+    <elementParameter field="TEXT" name="FILENAME_METTER" value="&quot;meter_file.txt&quot;" show="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="ISO-8859-15" show="false"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15" show="false"/>
+    <elementParameter field="CHECK" name="ON_DATABASE_FLAG" value="false" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_TYPE" value="tJDBCOutput" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION" value="ORACLE_11" show="false"/>
+    <elementParameter field="TEXT" name="URL" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TABLE" name="DRIVER_JAR" show="false"/>
+    <elementParameter field="TEXT" name="DRIVER_CLASS" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="HOST" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="PORT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="DATASOURCE" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="DBNAME" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="PROPERTIES" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="USER" value="&quot;&quot;" show="false"/>
+    <elementParameter field="PASSWORD" name="PASS" value="0RMsyjmybrE=" show="false"/>
+    <elementParameter field="FILE" name="DBFILE" value="&quot;&quot;" show="false"/>
+    <elementParameter field="DBTABLE" name="TABLE_STATS" value="&quot;&quot;" show="false"/>
+    <elementParameter field="DBTABLE" name="TABLE_LOGS" value="&quot;&quot;" show="false"/>
+    <elementParameter field="DBTABLE" name="TABLE_METER" value="&quot;&quot;" show="false"/>
+    <elementParameter field="CHECK" name="CATCH_RUNTIME_ERRORS" value="true" show="false"/>
+    <elementParameter field="CHECK" name="CATCH_USER_ERRORS" value="true" show="false"/>
+    <elementParameter field="CHECK" name="CATCH_USER_WARNING" value="true" show="false"/>
+    <elementParameter field="CHECK" name="CATCH_REALTIME_STATS" value="false" show="false"/>
+    <elementParameter field="TEXT" name="HEADERFOOTER_HEADERID" value="" show="false"/>
+    <elementParameter field="CHECK" name="HEADER_ENABLED" value="false" show="false"/>
+    <elementParameter field="TEXT" name="HEADER_LIBRARY" value="" show="false"/>
+    <elementParameter field="TEXT" name="HEADER_CODE" value="" show="false"/>
+    <elementParameter field="TEXT" name="HEADER_IMPORT" value="" show="false"/>
+    <elementParameter field="TEXT" name="HEADERFOOTER_FOOTERID" value="" show="false"/>
+    <elementParameter field="CHECK" name="FOOTER_ENABLED" value="false" show="false"/>
+    <elementParameter field="TEXT" name="FOOTER_LIBRARY" value="" show="false"/>
+    <elementParameter field="TEXT" name="FOOTER_CODE" value="" show="false"/>
+    <elementParameter field="TEXT" name="FOOTER_IMPORT" value="" show="false"/>
+    <routinesParameter id="_6KdtAEcVEeWV44u7UimgGQ" name="DataOperation"/>
+    <routinesParameter id="_6K0SUEcVEeWV44u7UimgGQ" name="Mathematical"/>
+    <routinesParameter id="_6K7AAEcVEeWV44u7UimgGQ" name="Numeric"/>
+    <routinesParameter id="_6LBtsEcVEeWV44u7UimgGQ" name="Relational"/>
+    <routinesParameter id="_6LHNQEcVEeWV44u7UimgGQ" name="StringHandling"/>
+    <routinesParameter id="_6LNT4EcVEeWV44u7UimgGQ" name="TalendDataGenerator"/>
+    <routinesParameter id="_6LTagEcVEeWV44u7UimgGQ" name="TalendDate"/>
+    <routinesParameter id="_6LaIMEcVEeWV44u7UimgGQ" name="TalendString"/>
+  </parameters>
+  <node componentName="tPostjob" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="64" posY="1088">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tPostjob_1" show="false"/>
+    <elementParameter field="DIRECTORY" name="JAVA_LIBRARY_PATH" value="C:\_software\TOS_BD-20150702_1326-V6.0.0\configuration\lib\java" show="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+  </node>
+  <node componentName="tPrejob" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="64" posY="64">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tPrejob_1" show="false"/>
+    <elementParameter field="DIRECTORY" name="JAVA_LIBRARY_PATH" value="C:\_software\TOS_BD-20150702_1326-V6.0.0\configuration\lib\java" show="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+  </node>
+  <node componentName="tFileInputJSON" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="64" posY="736">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFileInputJSON_1" show="false"/>
+    <elementParameter field="DIRECTORY" name="JAVA_LIBRARY_PATH" value="C:\_software\TOS_BD-20150702_1326-V6.0.0\configuration\lib\java" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="READ_BY" value="JSONPATH"/>
+    <elementParameter field="CHECK" name="USEURL" value="false"/>
+    <elementParameter field="TEXT" name="URLPATH" value="&quot;http://localhost:8080/JSON/JSON_file.txt&quot;" show="false"/>
+    <elementParameter field="FILE" name="FILENAME" value="context.pathStagingFiles+&quot;/&quot;+context.l_input_TRANS_EQUIPMENT_DETAILS"/>
+    <elementParameter field="TEXT" name="LOOP_QUERY" value="&quot;/bills/bill/line&quot;" show="false"/>
+    <elementParameter field="TEXT" name="JSON_LOOP_QUERY" value="&quot;equipmentData.[*]&quot;"/>
+    <elementParameter field="TABLE" name="MAPPING" show="false">
+      <elementValue elementRef="SCHEMA_COLUMN" value="siteId"/>
+      <elementValue elementRef="QUERY" value=""/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="siteName"/>
+      <elementValue elementRef="QUERY" value=""/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="siteStatus"/>
+      <elementValue elementRef="QUERY" value=""/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="eqSerialNumber"/>
+      <elementValue elementRef="QUERY" value=""/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="eqName"/>
+      <elementValue elementRef="QUERY" value=""/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="eqModel"/>
+      <elementValue elementRef="QUERY" value=""/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="eqDate"/>
+      <elementValue elementRef="QUERY" value=""/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="kWpDC"/>
+      <elementValue elementRef="QUERY" value=""/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="totalActivePower"/>
+      <elementValue elementRef="QUERY" value=""/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="dcVoltage"/>
+      <elementValue elementRef="QUERY" value=""/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="groundFaultResistance"/>
+      <elementValue elementRef="QUERY" value=""/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="powerLimit"/>
+      <elementValue elementRef="QUERY" value=""/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="totalEnergy"/>
+      <elementValue elementRef="QUERY" value=""/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="temperature"/>
+      <elementValue elementRef="QUERY" value=""/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="inverterMode"/>
+      <elementValue elementRef="QUERY" value=""/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="acCurrent"/>
+      <elementValue elementRef="QUERY" value=""/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="acVoltage"/>
+      <elementValue elementRef="QUERY" value=""/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="acFrequency"/>
+      <elementValue elementRef="QUERY" value=""/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="apparentPower"/>
+      <elementValue elementRef="QUERY" value=""/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="activePower"/>
+      <elementValue elementRef="QUERY" value=""/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="cosPhi"/>
+      <elementValue elementRef="QUERY" value=""/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="loadId"/>
+      <elementValue elementRef="QUERY" value=""/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="loadDate"/>
+      <elementValue elementRef="QUERY" value=""/>
+    </elementParameter>
+    <elementParameter field="TABLE" name="MAPPING_JSONPATH">
+      <elementValue elementRef="SCHEMA_COLUMN" value="siteId"/>
+      <elementValue elementRef="QUERY" value="&quot;siteId&quot;"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="siteName"/>
+      <elementValue elementRef="QUERY" value="&quot;siteName&quot;"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="siteStatus"/>
+      <elementValue elementRef="QUERY" value="&quot;siteStatus&quot;"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="eqSerialNumber"/>
+      <elementValue elementRef="QUERY" value="&quot;eqSerialNumber&quot;"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="eqName"/>
+      <elementValue elementRef="QUERY" value="&quot;eqName&quot;"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="eqModel"/>
+      <elementValue elementRef="QUERY" value="&quot;eqModel&quot;"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="eqDate"/>
+      <elementValue elementRef="QUERY" value="&quot;eqDate&quot;"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="kWpDC"/>
+      <elementValue elementRef="QUERY" value="&quot;kWpDC&quot;"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="totalActivePower"/>
+      <elementValue elementRef="QUERY" value="&quot;totalActivePower&quot;"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="dcVoltage"/>
+      <elementValue elementRef="QUERY" value="&quot;dcVoltage&quot;"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="groundFaultResistance"/>
+      <elementValue elementRef="QUERY" value="&quot;groundFaultResistence&quot;"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="powerLimit"/>
+      <elementValue elementRef="QUERY" value="&quot;powerLimit&quot;"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="totalEnergy"/>
+      <elementValue elementRef="QUERY" value="&quot;totalEnergy&quot;"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="temperature"/>
+      <elementValue elementRef="QUERY" value="&quot;temperature&quot;"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="inverterMode"/>
+      <elementValue elementRef="QUERY" value="&quot;inverterMode&quot;"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="acCurrent"/>
+      <elementValue elementRef="QUERY" value="&quot;acCurrent&quot;"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="acVoltage"/>
+      <elementValue elementRef="QUERY" value="&quot;acVoltage&quot;"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="acFrequency"/>
+      <elementValue elementRef="QUERY" value="&quot;acFrequency&quot;"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="apparentPower"/>
+      <elementValue elementRef="QUERY" value="&quot;apparentPower&quot;"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="activePower"/>
+      <elementValue elementRef="QUERY" value="&quot;activePower&quot;"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="cosPhi"/>
+      <elementValue elementRef="QUERY" value="&quot;cosPhi&quot;"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="loadId"/>
+      <elementValue elementRef="QUERY" value="&quot;loadId&quot;"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="loadDate"/>
+      <elementValue elementRef="QUERY" value="&quot;loadDate&quot;"/>
+    </elementParameter>
+    <elementParameter field="TABLE" name="MAPPINGXPATH" show="false">
+      <elementValue elementRef="SCHEMA_COLUMN" value="siteId"/>
+      <elementValue elementRef="QUERY" value=""/>
+      <elementValue elementRef="NODECHECK" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="siteName"/>
+      <elementValue elementRef="QUERY" value=""/>
+      <elementValue elementRef="NODECHECK" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="siteStatus"/>
+      <elementValue elementRef="QUERY" value=""/>
+      <elementValue elementRef="NODECHECK" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="eqSerialNumber"/>
+      <elementValue elementRef="QUERY" value=""/>
+      <elementValue elementRef="NODECHECK" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="eqName"/>
+      <elementValue elementRef="QUERY" value=""/>
+      <elementValue elementRef="NODECHECK" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="eqModel"/>
+      <elementValue elementRef="QUERY" value=""/>
+      <elementValue elementRef="NODECHECK" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="eqDate"/>
+      <elementValue elementRef="QUERY" value=""/>
+      <elementValue elementRef="NODECHECK" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="kWpDC"/>
+      <elementValue elementRef="QUERY" value=""/>
+      <elementValue elementRef="NODECHECK" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="totalActivePower"/>
+      <elementValue elementRef="QUERY" value=""/>
+      <elementValue elementRef="NODECHECK" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="dcVoltage"/>
+      <elementValue elementRef="QUERY" value=""/>
+      <elementValue elementRef="NODECHECK" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="groundFaultResistance"/>
+      <elementValue elementRef="QUERY" value=""/>
+      <elementValue elementRef="NODECHECK" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="powerLimit"/>
+      <elementValue elementRef="QUERY" value=""/>
+      <elementValue elementRef="NODECHECK" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="totalEnergy"/>
+      <elementValue elementRef="QUERY" value=""/>
+      <elementValue elementRef="NODECHECK" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="temperature"/>
+      <elementValue elementRef="QUERY" value=""/>
+      <elementValue elementRef="NODECHECK" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="inverterMode"/>
+      <elementValue elementRef="QUERY" value=""/>
+      <elementValue elementRef="NODECHECK" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="acCurrent"/>
+      <elementValue elementRef="QUERY" value=""/>
+      <elementValue elementRef="NODECHECK" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="acVoltage"/>
+      <elementValue elementRef="QUERY" value=""/>
+      <elementValue elementRef="NODECHECK" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="acFrequency"/>
+      <elementValue elementRef="QUERY" value=""/>
+      <elementValue elementRef="NODECHECK" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="apparentPower"/>
+      <elementValue elementRef="QUERY" value=""/>
+      <elementValue elementRef="NODECHECK" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="activePower"/>
+      <elementValue elementRef="QUERY" value=""/>
+      <elementValue elementRef="NODECHECK" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="cosPhi"/>
+      <elementValue elementRef="QUERY" value=""/>
+      <elementValue elementRef="NODECHECK" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="loadId"/>
+      <elementValue elementRef="QUERY" value=""/>
+      <elementValue elementRef="NODECHECK" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="loadDate"/>
+      <elementValue elementRef="QUERY" value=""/>
+      <elementValue elementRef="NODECHECK" value="false"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="false"/>
+    <elementParameter field="CHECK" name="ADVANCED_SEPARATOR" value="false"/>
+    <elementParameter field="TEXT" name="THOUSANDS_SEPARATOR" value="&quot;,&quot;" show="false"/>
+    <elementParameter field="TEXT" name="DECIMAL_SEPARATOR" value="&quot;.&quot;" show="false"/>
+    <elementParameter field="CHECK" name="CHECK_DATE" value="false" show="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;UTF-8&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="UTF-8"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="metadata" name="tFileInputJSON_1">
+      <column comment="" key="false" length="0" name="siteId" nullable="true" pattern="" precision="0" sourceType="UTF8Type" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="siteName" nullable="true" pattern="" precision="0" sourceType="UTF8Type" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="siteStatus" nullable="true" pattern="" precision="0" sourceType="UTF8Type" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="eqSerialNumber" nullable="true" pattern="" precision="0" sourceType="UTF8Type" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="eqName" nullable="true" pattern="" precision="0" sourceType="UTF8Type" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="eqModel" nullable="true" pattern="" precision="0" sourceType="UTF8Type" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="eqDate" nullable="true" pattern="&quot;yyyy-MM-dd HH:mm:ss&quot;" precision="0" sourceType="UTF8Type" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="kWpDC" nullable="true" pattern="" precision="0" sourceType="UTF8Type" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="totalActivePower" nullable="true" pattern="" precision="0" sourceType="UTF8Type" type="id_Double" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="dcVoltage" nullable="true" pattern="" precision="0" sourceType="UTF8Type" type="id_Double" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="groundFaultResistance" nullable="true" pattern="" precision="0" sourceType="UTF8Type" type="id_Double" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="powerLimit" nullable="true" pattern="" precision="0" sourceType="UTF8Type" type="id_Double" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="totalEnergy" nullable="true" pattern="" precision="0" sourceType="UTF8Type" type="id_Double" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="temperature" nullable="true" pattern="" precision="0" sourceType="UTF8Type" type="id_Double" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="inverterMode" nullable="true" pattern="" precision="0" sourceType="UTF8Type" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="acCurrent" nullable="true" pattern="" precision="0" sourceType="UTF8Type" type="id_Double" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="acVoltage" nullable="true" pattern="" precision="0" sourceType="UTF8Type" type="id_Double" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="acFrequency" nullable="true" pattern="" precision="0" sourceType="UTF8Type" type="id_Double" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="apparentPower" nullable="true" pattern="" precision="0" sourceType="UTF8Type" type="id_Double" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="activePower" nullable="true" pattern="" precision="0" sourceType="UTF8Type" type="id_Double" usefulColumn="true"/>
+      <column comment="" key="false" name="cosPhi" nullable="true" pattern="" sourceType="" type="id_Double" usefulColumn="true"/>
+      <column comment="" key="false" name="loadId" nullable="true" pattern="" sourceType="" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" name="loadDate" nullable="true" pattern="&quot;yyyy-MM-dd HH:mm:ss&quot;" sourceType="" type="id_Date" usefulColumn="true"/>
+    </metadata>
+    <metadata connector="REJECT" label="metadata" name="REJECT">
+      <column comment="" key="false" length="0" name="siteId" nullable="true" pattern="" precision="0" sourceType="UTF8Type" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="siteName" nullable="true" pattern="" precision="0" sourceType="UTF8Type" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="siteStatus" nullable="true" pattern="" precision="0" sourceType="UTF8Type" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="eqSerialNumber" nullable="true" pattern="" precision="0" sourceType="UTF8Type" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="eqName" nullable="true" pattern="" precision="0" sourceType="UTF8Type" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="eqModel" nullable="true" pattern="" precision="0" sourceType="UTF8Type" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="eqDate" nullable="true" pattern="&quot;yyyy-MM-dd HH:mm:ss&quot;" precision="0" sourceType="UTF8Type" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="kWpDC" nullable="true" pattern="" precision="0" sourceType="UTF8Type" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="totalActivePower" nullable="true" pattern="" precision="0" sourceType="UTF8Type" type="id_Double" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="dcVoltage" nullable="true" pattern="" precision="0" sourceType="UTF8Type" type="id_Double" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="groundFaultResistance" nullable="true" pattern="" precision="0" sourceType="UTF8Type" type="id_Double" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="powerLimit" nullable="true" pattern="" precision="0" sourceType="UTF8Type" type="id_Double" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="totalEnergy" nullable="true" pattern="" precision="0" sourceType="UTF8Type" type="id_Double" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="temperature" nullable="true" pattern="" precision="0" sourceType="UTF8Type" type="id_Double" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="inverterMode" nullable="true" pattern="" precision="0" sourceType="UTF8Type" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="acCurrent" nullable="true" pattern="" precision="0" sourceType="UTF8Type" type="id_Double" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="acVoltage" nullable="true" pattern="" precision="0" sourceType="UTF8Type" type="id_Double" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="acFrequency" nullable="true" pattern="" precision="0" sourceType="UTF8Type" type="id_Double" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="apparentPower" nullable="true" pattern="" precision="0" sourceType="UTF8Type" type="id_Double" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="activePower" nullable="true" pattern="" precision="0" sourceType="UTF8Type" type="id_Double" usefulColumn="true"/>
+      <column comment="" key="false" name="cosPhi" nullable="true" pattern="" sourceType="" type="id_Double" usefulColumn="true"/>
+      <column comment="" key="false" name="loadId" nullable="true" pattern="" sourceType="" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" name="loadDate" nullable="true" pattern="&quot;yyyy-MM-dd HH:mm:ss&quot;" sourceType="" type="id_Date" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorCode" nullable="true" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tCassandraOutput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="544" posY="736">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tCassandraOutput_1" show="false"/>
+    <elementParameter field="DIRECTORY" name="JAVA_LIBRARY_PATH" value="C:\_software\TOS_BD-20150702_1326-V6.0.0\configuration\lib\java" show="false"/>
+    <elementParameter field="MAPPING_TYPE" name="MAPPING" value="cassandra_datastax_id" show="false"/>
+    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="true"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tCassandraConnection_2"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION" value="CASSANDRA_1_1_2" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="API_TYPE" value="HECTOR" show="false"/>
+    <elementParameter field="TEXT" name="API_SELECTED" value="datastax" show="false"/>
+    <elementParameter field="TEXT" name="HOST" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="PORT" value="&quot;9160&quot;" show="false"/>
+    <elementParameter field="TEXT" name="KEY_SPACE_DATASTAX" value="&quot;&quot;" show="false"/>
+    <elementParameter field="CHECK" name="REQUIRED_AUTHENTICATION" value="false" show="false"/>
+    <elementParameter field="TEXT" name="USERNAME" value="&quot;&quot;" show="false"/>
+    <elementParameter field="PASSWORD" name="PASSWORD" value="0RMsyjmybrE=" show="false"/>
+    <elementParameter field="TEXT" name="KEY_SPACE" value="&quot;test&quot;" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="ACTION_ON_KEYSPACE" value="NONE" show="false"/>
+    <elementParameter field="TEXT" name="COLUMN_FAMILY" value="&quot;ttt&quot;" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="COLUMN_FAMILY_TYPE" value="STANDARD" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="ACTION_ON_COLUMN_FAMILY" value="NONE" show="false"/>
+    <elementParameter field="CHECK" name="DEFINE_CF_STRUCTS" value="true" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="COMPARATOR" value="AsciiType" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="ACTION_ON_DATA" value="UPSERT" show="false"/>
+    <elementParameter field="COLUMN_LIST" name="KEY_COLUMN" value="siteId" show="false"/>
+    <elementParameter field="CHECK" name="INC_KEY" value="false" show="false"/>
+    <elementParameter field="COLUMN_LIST" name="SUPER_KEY_COLUMN" value="siteId" show="false"/>
+    <elementParameter field="CHECK" name="INC_SUPER_KEY" value="true" show="false"/>
+    <elementParameter field="CHECK" name="DELETE_ROW" value="false" show="false"/>
+    <elementParameter field="CHECK" name="DELETE_SUPER_COLUMN" value="false" show="false"/>
+    <elementParameter field="TABLE" name="DELETE_COLUMNS" show="false"/>
+    <elementParameter field="TEXT" name="TABLE" value="&quot;SiteEquipmentData&quot;"/>
+    <elementParameter field="CLOSED_LIST" name="TABLE_ACTION" value="CREATE_IF_NOT_EXISTS"/>
+    <elementParameter field="CLOSED_LIST" name="DATA_ACTION" value="INSERT"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="false"/>
+    <elementParameter field="CHECK" name="USE_UNLOGGED_BATCH" value="false"/>
+    <elementParameter field="TEXT" name="BATCH_SIZE" value="10000" show="false"/>
+    <elementParameter field="CHECK" name="INSERT_IF_NOT_EXISTS" value="false"/>
+    <elementParameter field="CHECK" name="DELETE_IF_EXISTS" value="false" show="false"/>
+    <elementParameter field="CHECK" name="USING_TTL" value="false"/>
+    <elementParameter field="COLUMN_LIST" name="TTL" value="siteId" show="false"/>
+    <elementParameter field="CHECK" name="USING_TIMESTAMP" value="false"/>
+    <elementParameter field="COLUMN_LIST" name="TIMESTAMP" value="siteId" show="false"/>
+    <elementParameter field="TABLE" name="IF_CONDITION" show="false"/>
+    <elementParameter field="TABLE" name="ASSIGNMENT_OPERATION" show="false"/>
+    <elementParameter field="TABLE" name="DELETE_COLUMN_BY_POSITION_KEY" show="false"/>
+    <elementParameter field="TABLE" name="ROW_KEY_IN_LIST" show="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="metadata" name="tCassandraOutput_1">
+      <column comment="" key="true" length="0" name="siteId" nullable="true" pattern="" precision="0" sourceType="int" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="siteName" nullable="true" pattern="" precision="0" sourceType="ascii" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="siteStatus" nullable="true" pattern="" precision="0" sourceType="ascii" type="id_String" usefulColumn="true"/>
+      <column comment="" key="true" length="0" name="eqSerialNumber" nullable="true" pattern="" precision="0" sourceType="ascii" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="eqName" nullable="true" pattern="" precision="0" sourceType="ascii" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="eqModel" nullable="true" pattern="" precision="0" sourceType="ascii" type="id_String" usefulColumn="true"/>
+      <column comment="" key="true" length="0" name="eqDate" nullable="true" pattern="&quot;yyyy-MM-dd HH:mm:ss&quot;" precision="0" sourceType="timestamp" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="kWpDC" nullable="true" pattern="" precision="0" sourceType="ascii" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="totalActivePower" nullable="true" pattern="" precision="0" sourceType="double" type="id_Double" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="dcVoltage" nullable="true" pattern="" precision="0" sourceType="double" type="id_Double" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="groundFaultResistance" nullable="true" pattern="" precision="0" sourceType="double" type="id_Double" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="powerLimit" nullable="true" pattern="" precision="0" sourceType="double" type="id_Double" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="totalEnergy" nullable="true" pattern="" precision="0" sourceType="double" type="id_Double" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="temperature" nullable="true" pattern="" precision="0" sourceType="double" type="id_Double" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="inverterMode" nullable="true" pattern="" precision="0" sourceType="text" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="acCurrent" nullable="true" pattern="" precision="0" sourceType="double" type="id_Double" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="acVoltage" nullable="true" pattern="" precision="0" sourceType="double" type="id_Double" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="acFrequency" nullable="true" pattern="" precision="0" sourceType="double" type="id_Double" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="apparentPower" nullable="true" pattern="" precision="0" sourceType="double" type="id_Double" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="activePower" nullable="true" pattern="" precision="0" sourceType="double" type="id_Double" usefulColumn="true"/>
+      <column comment="" key="false" name="cosPhi" nullable="true" pattern="" sourceType="double" type="id_Double" usefulColumn="true"/>
+      <column comment="" key="false" name="loadId" nullable="true" pattern="" sourceType="int" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" name="loadDate" nullable="true" pattern="&quot;yyyy-MM-dd HH:mm:ss&quot;" sourceType="timestamp" type="id_Date" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tCassandraConnection" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="64" posY="480">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tCassandraConnection_2" show="false"/>
+    <elementParameter field="DIRECTORY" name="JAVA_LIBRARY_PATH" value="C:\_software\TOS_BD-20150702_1326-V6.0.0\configuration\lib\java" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION" value="CASSANDRA_2_0_0"/>
+    <elementParameter field="CLOSED_LIST" name="API_TYPE" value="DATASTAX"/>
+    <elementParameter field="TEXT" name="HOST" value="context.cassandraServer"/>
+    <elementParameter field="TEXT" name="PORT" value="context.cassandraPort"/>
+    <elementParameter field="TEXT" name="KEY_SPACE" value="context.cassandraKeyspace"/>
+    <elementParameter field="CHECK" name="REQUIRED_AUTHENTICATION" value="false"/>
+    <elementParameter field="TEXT" name="USERNAME" value="&quot;&quot;" show="false"/>
+    <elementParameter field="PASSWORD" name="PASSWORD" value="0RMsyjmybrE=" show="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+  </node>
+  <node componentName="tCassandraClose" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="64" posY="1216">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tCassandraClose_2" show="false"/>
+    <elementParameter field="DIRECTORY" name="JAVA_LIBRARY_PATH" value="C:\_software\TOS_BD-20150702_1326-V6.0.0\configuration\lib\java" show="false"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tCassandraConnection_2"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+  </node>
+  <node componentName="tFileInputJSON" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="64" posY="864">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFileInputJSON_2" show="false"/>
+    <elementParameter field="DIRECTORY" name="JAVA_LIBRARY_PATH" value="C:\_software\TOS_BD-20150702_1326-V6.0.0\configuration\lib\java" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="READ_BY" value="JSONPATH"/>
+    <elementParameter field="CHECK" name="USEURL" value="false"/>
+    <elementParameter field="TEXT" name="URLPATH" value="&quot;http://localhost:8080/JSON/JSON_file.txt&quot;" show="false"/>
+    <elementParameter field="FILE" name="FILENAME" value="context.pathStagingFiles+&quot;/&quot;+context.l_input_TRANS_TIMESERIES"/>
+    <elementParameter field="TEXT" name="LOOP_QUERY" value="&quot;/bills/bill/line&quot;" show="false"/>
+    <elementParameter field="TEXT" name="JSON_LOOP_QUERY" value="&quot;tsData.[*]&quot;"/>
+    <elementParameter field="TABLE" name="MAPPING" show="false">
+      <elementValue elementRef="SCHEMA_COLUMN" value="siteId"/>
+      <elementValue elementRef="QUERY" value=""/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="siteName"/>
+      <elementValue elementRef="QUERY" value=""/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="siteStatus"/>
+      <elementValue elementRef="QUERY" value=""/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="tsName"/>
+      <elementValue elementRef="QUERY" value=""/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="tsDate"/>
+      <elementValue elementRef="QUERY" value=""/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="tsValue"/>
+      <elementValue elementRef="QUERY" value=""/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="tsUnit"/>
+      <elementValue elementRef="QUERY" value=""/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="tsTimeUnit"/>
+      <elementValue elementRef="QUERY" value=""/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="loadDate"/>
+      <elementValue elementRef="QUERY" value=""/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="loadId"/>
+      <elementValue elementRef="QUERY" value=""/>
+    </elementParameter>
+    <elementParameter field="TABLE" name="MAPPING_JSONPATH">
+      <elementValue elementRef="SCHEMA_COLUMN" value="siteId"/>
+      <elementValue elementRef="QUERY" value="&quot;siteId&quot;"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="siteName"/>
+      <elementValue elementRef="QUERY" value="&quot;siteName&quot;"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="siteStatus"/>
+      <elementValue elementRef="QUERY" value="&quot;siteStatus&quot;"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="tsName"/>
+      <elementValue elementRef="QUERY" value="&quot;tsName&quot;"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="tsDate"/>
+      <elementValue elementRef="QUERY" value="&quot;tsDate&quot;"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="tsValue"/>
+      <elementValue elementRef="QUERY" value="&quot;tsValue&quot;"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="tsUnit"/>
+      <elementValue elementRef="QUERY" value="&quot;tsUnit&quot;"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="tsTimeUnit"/>
+      <elementValue elementRef="QUERY" value="&quot;tsTimeUnit&quot;"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="loadDate"/>
+      <elementValue elementRef="QUERY" value="&quot;loadDate&quot;"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="loadId"/>
+      <elementValue elementRef="QUERY" value="&quot;loadId&quot;"/>
+    </elementParameter>
+    <elementParameter field="TABLE" name="MAPPINGXPATH" show="false">
+      <elementValue elementRef="SCHEMA_COLUMN" value="siteId"/>
+      <elementValue elementRef="QUERY" value=""/>
+      <elementValue elementRef="NODECHECK" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="siteName"/>
+      <elementValue elementRef="QUERY" value=""/>
+      <elementValue elementRef="NODECHECK" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="siteStatus"/>
+      <elementValue elementRef="QUERY" value=""/>
+      <elementValue elementRef="NODECHECK" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="tsName"/>
+      <elementValue elementRef="QUERY" value=""/>
+      <elementValue elementRef="NODECHECK" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="tsDate"/>
+      <elementValue elementRef="QUERY" value=""/>
+      <elementValue elementRef="NODECHECK" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="tsValue"/>
+      <elementValue elementRef="QUERY" value=""/>
+      <elementValue elementRef="NODECHECK" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="tsUnit"/>
+      <elementValue elementRef="QUERY" value=""/>
+      <elementValue elementRef="NODECHECK" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="tsTimeUnit"/>
+      <elementValue elementRef="QUERY" value=""/>
+      <elementValue elementRef="NODECHECK" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="loadDate"/>
+      <elementValue elementRef="QUERY" value=""/>
+      <elementValue elementRef="NODECHECK" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="loadId"/>
+      <elementValue elementRef="QUERY" value=""/>
+      <elementValue elementRef="NODECHECK" value="false"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="false"/>
+    <elementParameter field="CHECK" name="ADVANCED_SEPARATOR" value="false"/>
+    <elementParameter field="TEXT" name="THOUSANDS_SEPARATOR" value="&quot;,&quot;" show="false"/>
+    <elementParameter field="TEXT" name="DECIMAL_SEPARATOR" value="&quot;.&quot;" show="false"/>
+    <elementParameter field="CHECK" name="CHECK_DATE" value="false" show="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;UTF-8&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="UTF-8"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="metadata" name="tFileInputJSON_2">
+      <column comment="" key="false" length="0" name="siteId" nullable="true" pattern="" precision="0" sourceType="" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="siteName" nullable="true" pattern="" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="siteStatus" nullable="true" pattern="" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="tsName" nullable="true" pattern="" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="tsDate" nullable="true" pattern="&quot;yyyy-MM-dd HH:mm:ss&quot;" precision="0" sourceType="" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="tsValue" nullable="true" pattern="" precision="0" sourceType="" type="id_Double" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="tsUnit" nullable="true" pattern="" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="tsTimeUnit" nullable="true" pattern="" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="loadDate" nullable="false" pattern="&quot;yyyy-MM-dd HH:mm:ss&quot;" precision="0" sourceType="" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="loadId" nullable="true" pattern="" precision="0" sourceType="" type="id_Integer" usefulColumn="true"/>
+    </metadata>
+    <metadata connector="REJECT" label="metadata" name="REJECT">
+      <column comment="" key="false" length="0" name="siteId" nullable="true" pattern="" precision="0" sourceType="" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="siteName" nullable="true" pattern="" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="siteStatus" nullable="true" pattern="" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="Power" key="false" length="0" name="tsName" nullable="true" pattern="" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="tsDate" nullable="true" pattern="&quot;yyyy-MM-dd HH:mm:ss&quot;" precision="0" sourceType="" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="tsValue" nullable="true" pattern="" precision="0" sourceType="" type="id_Double" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="tsUnit" nullable="true" pattern="" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="tsTimeUnit" nullable="true" pattern="" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="loadDate" nullable="false" pattern="&quot;yyyy-MM-dd HH:mm:ss&quot;" precision="0" sourceType="" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="loadId" nullable="true" pattern="" precision="0" sourceType="" type="id_Integer" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorCode" nullable="true" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tCassandraOutput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="544" posY="864">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tCassandraOutput_2" show="false"/>
+    <elementParameter field="DIRECTORY" name="JAVA_LIBRARY_PATH" value="C:\_software\TOS_BD-20150702_1326-V6.0.0\configuration\lib\java" show="false"/>
+    <elementParameter field="MAPPING_TYPE" name="MAPPING" value="cassandra_datastax_id" show="false"/>
+    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="true"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tCassandraConnection_2"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION" value="CASSANDRA_1_1_2" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="API_TYPE" value="HECTOR" show="false"/>
+    <elementParameter field="TEXT" name="API_SELECTED" value="datastax" show="false"/>
+    <elementParameter field="TEXT" name="HOST" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="PORT" value="&quot;9160&quot;" show="false"/>
+    <elementParameter field="TEXT" name="KEY_SPACE_DATASTAX" value="&quot;&quot;" show="false"/>
+    <elementParameter field="CHECK" name="REQUIRED_AUTHENTICATION" value="false" show="false"/>
+    <elementParameter field="TEXT" name="USERNAME" value="&quot;&quot;" show="false"/>
+    <elementParameter field="PASSWORD" name="PASSWORD" value="0RMsyjmybrE=" show="false"/>
+    <elementParameter field="TEXT" name="KEY_SPACE" value="&quot;test&quot;" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="ACTION_ON_KEYSPACE" value="NONE" show="false"/>
+    <elementParameter field="TEXT" name="COLUMN_FAMILY" value="&quot;ttt&quot;" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="COLUMN_FAMILY_TYPE" value="STANDARD" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="ACTION_ON_COLUMN_FAMILY" value="NONE" show="false"/>
+    <elementParameter field="CHECK" name="DEFINE_CF_STRUCTS" value="true" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="COMPARATOR" value="AsciiType" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="ACTION_ON_DATA" value="UPSERT" show="false"/>
+    <elementParameter field="COLUMN_LIST" name="KEY_COLUMN" value="siteId" show="false"/>
+    <elementParameter field="CHECK" name="INC_KEY" value="false" show="false"/>
+    <elementParameter field="COLUMN_LIST" name="SUPER_KEY_COLUMN" value="siteId" show="false"/>
+    <elementParameter field="CHECK" name="INC_SUPER_KEY" value="true" show="false"/>
+    <elementParameter field="CHECK" name="DELETE_ROW" value="false" show="false"/>
+    <elementParameter field="CHECK" name="DELETE_SUPER_COLUMN" value="false" show="false"/>
+    <elementParameter field="TABLE" name="DELETE_COLUMNS" show="false"/>
+    <elementParameter field="TEXT" name="TABLE" value="&quot;SiteTimeSeries&quot;"/>
+    <elementParameter field="CLOSED_LIST" name="TABLE_ACTION" value="CREATE_IF_NOT_EXISTS"/>
+    <elementParameter field="CLOSED_LIST" name="DATA_ACTION" value="INSERT"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="false"/>
+    <elementParameter field="CHECK" name="USE_UNLOGGED_BATCH" value="false"/>
+    <elementParameter field="TEXT" name="BATCH_SIZE" value="10000" show="false"/>
+    <elementParameter field="CHECK" name="INSERT_IF_NOT_EXISTS" value="false"/>
+    <elementParameter field="CHECK" name="DELETE_IF_EXISTS" value="false" show="false"/>
+    <elementParameter field="CHECK" name="USING_TTL" value="false"/>
+    <elementParameter field="COLUMN_LIST" name="TTL" value="siteId" show="false"/>
+    <elementParameter field="CHECK" name="USING_TIMESTAMP" value="false"/>
+    <elementParameter field="COLUMN_LIST" name="TIMESTAMP" value="siteId" show="false"/>
+    <elementParameter field="TABLE" name="IF_CONDITION" show="false"/>
+    <elementParameter field="TABLE" name="ASSIGNMENT_OPERATION" show="false"/>
+    <elementParameter field="TABLE" name="DELETE_COLUMN_BY_POSITION_KEY" show="false"/>
+    <elementParameter field="TABLE" name="ROW_KEY_IN_LIST" show="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="metadata" name="tCassandraOutput_2">
+      <column comment="" defaultValue="-1" key="true" length="0" name="siteId" nullable="true" pattern="" precision="0" sourceType="int" type="id_Integer" usefulColumn="true"/>
+      <column comment="" defaultValue="&quot;No Site&quot;" key="false" length="0" name="siteName" nullable="true" pattern="" precision="0" sourceType="text" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="siteStatus" nullable="true" pattern="" precision="0" sourceType="text" type="id_String" usefulColumn="true"/>
+      <column comment="" key="true" length="0" name="tsName" nullable="true" pattern="" precision="0" sourceType="text" type="id_String" usefulColumn="true"/>
+      <column comment="" key="true" length="0" name="tsDate" nullable="true" pattern="&quot;yyyy-MM-dd HH:mm:ss&quot;" precision="0" sourceType="timestamp" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="tsValue" nullable="true" pattern="" precision="0" sourceType="double" type="id_Double" usefulColumn="true"/>
+      <column comment="" key="true" length="0" name="tsUnit" nullable="true" pattern="" precision="0" sourceType="text" type="id_String" usefulColumn="true"/>
+      <column comment="" key="true" length="0" name="tsTimeUnit" nullable="true" pattern="" precision="0" sourceType="text" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="loadDate" nullable="false" pattern="&quot;yyyy-MM-dd HH:mm:ss&quot;" precision="0" sourceType="timestamp" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="loadId" nullable="true" pattern="" precision="0" sourceType="int" type="id_Integer" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tLogCatcher" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="64" posY="192">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tLogCatcher_1" show="false"/>
+    <elementParameter field="DIRECTORY" name="JAVA_LIBRARY_PATH" value="C:\_software\TOS_BD-20150702_1326-V6.0.0\configuration\lib\java" show="false"/>
+    <elementParameter field="CHECK" name="CATCH_JAVA_EXCEPTION" value="false"/>
+    <elementParameter field="CHECK" name="CATCH_TDIE" value="true"/>
+    <elementParameter field="CHECK" name="CATCH_TWARN" value="true"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tLogCatcher_1">
+      <column defaultValue="" key="false" length="0" name="moment" nullable="true" pattern="&quot;yyyy-MM-dd HH:mm:ss&quot;" precision="0" sourceType="" type="id_Date" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="20" name="pid" nullable="true" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="20" name="root_pid" nullable="true" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="20" name="father_pid" nullable="true" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="50" name="project" nullable="true" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="job" nullable="true" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="50" name="context" nullable="true" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="3" name="priority" nullable="true" precision="0" sourceType="" type="id_Integer" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="type" nullable="true" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="origin" nullable="true" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="message" nullable="true" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="3" name="code" nullable="true" precision="0" sourceType="" type="id_Integer" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tLogRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="64" posY="320">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tLogRow_1" show="false"/>
+    <elementParameter field="DIRECTORY" name="JAVA_LIBRARY_PATH" value="C:\_software\TOS_BD-20150702_1326-V6.0.0\configuration\lib\java" show="false"/>
+    <elementParameter field="RADIO" name="BASIC_MODE" value="true"/>
+    <elementParameter field="RADIO" name="TABLE_PRINT" value="false"/>
+    <elementParameter field="RADIO" name="VERTICAL" value="false"/>
+    <elementParameter field="RADIO" name="PRINT_UNIQUE" value="true" show="false"/>
+    <elementParameter field="RADIO" name="PRINT_LABEL" value="false" show="false"/>
+    <elementParameter field="RADIO" name="PRINT_UNIQUE_LABEL" value="false" show="false"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot; | &quot;"/>
+    <elementParameter field="CHECK" name="PRINT_HEADER" value="false"/>
+    <elementParameter field="CHECK" name="PRINT_UNIQUE_NAME" value="false"/>
+    <elementParameter field="CHECK" name="PRINT_COLNAMES" value="false"/>
+    <elementParameter field="CHECK" name="USE_FIXED_LENGTH" value="false"/>
+    <elementParameter field="TABLE" name="LENGTHS" show="false">
+      <elementValue elementRef="SCHEMA_COLUMN" value="moment"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="pid"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="project"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="job"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="priority"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="message"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+    </elementParameter>
+    <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" value="100" show="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tLogRow_1">
+      <column key="false" length="0" name="moment" nullable="true" pattern="&quot;yyyy-MM-dd HH:mm:ss&quot;" precision="0" sourceType="" type="id_Date" usefulColumn="true"/>
+      <column key="false" length="20" name="pid" nullable="true" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column key="false" length="50" name="project" nullable="true" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column key="false" length="255" name="job" nullable="true" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="3" name="priority" nullable="true" precision="0" sourceType="" type="id_Integer" usefulColumn="true"/>
+      <column key="false" length="255" name="message" nullable="true" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tDie" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="992" posY="320">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tDie_1" show="false"/>
+    <elementParameter field="CHECK" name="TSTATCATCHER_STATS" value="true"/>
+    <elementParameter field="DIRECTORY" name="JAVA_LIBRARY_PATH" value="C:\_software\TOS_BD-20150702_1326-V6.0.0\configuration\lib\java" show="false"/>
+    <elementParameter field="TEXT" name="MESSAGE" value="&quot;Could not write to log stream&quot;"/>
+    <elementParameter field="TEXT" name="CODE" value="context.l_returnValue"/>
+    <elementParameter field="CLOSED_LIST" name="PRIORITY" value="5"/>
+    <elementParameter field="CHECK" name="EXIT_JVM" value="false"/>
+    <elementParameter field="TEXT" name="LABEL" value="LogError"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tDie_1"/>
+  </node>
+  <node componentName="tWarn" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="64" posY="608">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tWarn_1" show="false"/>
+    <elementParameter field="CHECK" name="TSTATCATCHER_STATS" value="true"/>
+    <elementParameter field="DIRECTORY" name="JAVA_LIBRARY_PATH" value="C:\_software\TOS_BD-20150702_1326-V6.0.0\configuration\lib\java" show="false"/>
+    <elementParameter field="TEXT" name="MESSAGE" value="&quot;START &quot;+jobName"/>
+    <elementParameter field="TEXT" name="CODE" value="context.l_returnValue"/>
+    <elementParameter field="CLOSED_LIST" name="PRIORITY" value="3"/>
+    <elementParameter field="TEXT" name="LABEL" value="StartJob"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tWarn_1"/>
+  </node>
+  <node componentName="tJava" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="832" posY="608">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJava_1" show="false"/>
+    <elementParameter field="DIRECTORY" name="JAVA_LIBRARY_PATH" value="C:\_software\TOS_BD-20150702_1326-V6.0.0\configuration\lib\java" show="false"/>
+    <elementParameter field="MEMO_JAVA" name="CODE" value="context.l_returnValue = 1;"/>
+    <elementParameter field="MEMO_IMPORT" name="IMPORT" value="//import java.util.List;"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tJava_1"/>
+  </node>
+  <node componentName="tDie" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="992" posY="608">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tDie_2" show="false"/>
+    <elementParameter field="CHECK" name="TSTATCATCHER_STATS" value="true"/>
+    <elementParameter field="DIRECTORY" name="JAVA_LIBRARY_PATH" value="C:\_software\TOS_BD-20150702_1326-V6.0.0\configuration\lib\java" show="false"/>
+    <elementParameter field="TEXT" name="MESSAGE" value="&quot;Could not load data from file: &quot;+context.l_input_TRANS_EQUIPMENT_DETAILS"/>
+    <elementParameter field="TEXT" name="CODE" value="context.l_returnValue"/>
+    <elementParameter field="CLOSED_LIST" name="PRIORITY" value="4"/>
+    <elementParameter field="CHECK" name="EXIT_JVM" value="false"/>
+    <elementParameter field="TEXT" name="LABEL" value="FileWriteError"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tDie_2"/>
+  </node>
+  <node componentName="tWarn" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="992" posY="736">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tWarn_2" show="false"/>
+    <elementParameter field="CHECK" name="TSTATCATCHER_STATS" value="true"/>
+    <elementParameter field="DIRECTORY" name="JAVA_LIBRARY_PATH" value="C:\_software\TOS_BD-20150702_1326-V6.0.0\configuration\lib\java" show="false"/>
+    <elementParameter field="TEXT" name="MESSAGE" value="&quot;Equipment data loaded from file: &quot;+context.l_input_TRANS_EQUIPMENT_DETAILS"/>
+    <elementParameter field="TEXT" name="CODE" value="context.l_returnValue"/>
+    <elementParameter field="CLOSED_LIST" name="PRIORITY" value="3"/>
+    <elementParameter field="TEXT" name="LABEL" value="FileWriten"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tWarn_2"/>
+  </node>
+  <node componentName="tJava" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="832" posY="864">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJava_2" show="false"/>
+    <elementParameter field="DIRECTORY" name="JAVA_LIBRARY_PATH" value="C:\_software\TOS_BD-20150702_1326-V6.0.0\configuration\lib\java" show="false"/>
+    <elementParameter field="MEMO_JAVA" name="CODE" value="context.l_returnValue = 1;"/>
+    <elementParameter field="MEMO_IMPORT" name="IMPORT" value="//import java.util.List;"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tJava_2"/>
+  </node>
+  <node componentName="tDie" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="992" posY="864">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tDie_3" show="false"/>
+    <elementParameter field="CHECK" name="TSTATCATCHER_STATS" value="true"/>
+    <elementParameter field="DIRECTORY" name="JAVA_LIBRARY_PATH" value="C:\_software\TOS_BD-20150702_1326-V6.0.0\configuration\lib\java" show="false"/>
+    <elementParameter field="TEXT" name="MESSAGE" value="&quot;Could not load data from file: &quot;+context.l_input_TRANS_TIMESERIES"/>
+    <elementParameter field="TEXT" name="CODE" value="context.l_returnValue"/>
+    <elementParameter field="CLOSED_LIST" name="PRIORITY" value="4"/>
+    <elementParameter field="CHECK" name="EXIT_JVM" value="false"/>
+    <elementParameter field="TEXT" name="LABEL" value="FileWriteError"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tDie_3"/>
+  </node>
+  <node componentName="tWarn" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="992" posY="992">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tWarn_3" show="false"/>
+    <elementParameter field="CHECK" name="TSTATCATCHER_STATS" value="true"/>
+    <elementParameter field="DIRECTORY" name="JAVA_LIBRARY_PATH" value="C:\_software\TOS_BD-20150702_1326-V6.0.0\configuration\lib\java" show="false"/>
+    <elementParameter field="TEXT" name="MESSAGE" value="&quot;Equipment data loaded from file: &quot;+context.l_input_TRANS_TIMESERIES"/>
+    <elementParameter field="TEXT" name="CODE" value="context.l_returnValue"/>
+    <elementParameter field="CLOSED_LIST" name="PRIORITY" value="3"/>
+    <elementParameter field="TEXT" name="LABEL" value="FileWriten"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tWarn_3"/>
+  </node>
+  <node componentName="tFixedFlowInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="64" posY="1344">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFixedFlowInput_1" show="false"/>
+    <elementParameter field="DIRECTORY" name="JAVA_LIBRARY_PATH" value="C:\_software\TOS_BD-20150702_1326-V6.0.0\configuration\lib\java" show="false"/>
+    <elementParameter field="TEXT" name="NB_ROWS" value="1"/>
+    <elementParameter field="RADIO" name="USE_SINGLEMODE" value="true"/>
+    <elementParameter field="TABLE" name="VALUES">
+      <elementValue elementRef="SCHEMA_COLUMN" value="returnStatus"/>
+      <elementValue elementRef="VALUE" value="context.l_returnValue"/>
+    </elementParameter>
+    <elementParameter field="RADIO" name="USE_INTABLE" value="false"/>
+    <elementParameter field="TABLE" name="INTABLE" show="false"/>
+    <elementParameter field="RADIO" name="USE_INLINECONTENT" value="false"/>
+    <elementParameter field="TEXT" name="ROWSEPARATOR" value="&quot;\n&quot;" show="false"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;;&quot;" show="false"/>
+    <elementParameter field="MEMO" name="INLINECONTENT" value="" show="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tFixedFlowInput_1">
+      <column comment="" defaultValue="0" key="false" name="returnStatus" nullable="true" pattern="" sourceType="" type="id_Integer" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tBufferOutput" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="64" posY="1472">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tBufferOutput_1" show="false"/>
+    <elementParameter field="DIRECTORY" name="JAVA_LIBRARY_PATH" value="C:\_software\TOS_BD-20150702_1326-V6.0.0\configuration\lib\java" show="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tBufferOutput_1">
+      <column comment="" defaultValue="0" key="false" name="returnStatus" nullable="true" pattern="" sourceType="" type="id_Integer" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tWarn" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="992" posY="1472">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tWarn_5" show="false"/>
+    <elementParameter field="CHECK" name="TSTATCATCHER_STATS" value="true"/>
+    <elementParameter field="DIRECTORY" name="JAVA_LIBRARY_PATH" value="C:\_software\TOS_BD-20150702_1326-V6.0.0\configuration\lib\java" show="false"/>
+    <elementParameter field="TEXT" name="MESSAGE" value="&quot;END &quot;+jobName"/>
+    <elementParameter field="TEXT" name="CODE" value="context.l_returnValue"/>
+    <elementParameter field="CLOSED_LIST" name="PRIORITY" value="3"/>
+    <elementParameter field="TEXT" name="LABEL" value="JobEnd"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tWarn_5">
+      <column comment="" defaultValue="0" key="false" name="returnStatus" nullable="true" pattern="" sourceType="" type="id_Integer" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tPostjob_1" offsetLabelX="0" offsetLabelY="0" source="tPostjob_1" target="tCassandraClose_2">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnComponentOk2" show="false"/>
+  </connection>
+  <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tPrejob_1" offsetLabelX="0" offsetLabelY="0" source="tPrejob_1" target="tLogCatcher_1">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnComponentOk1" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="row1" lineStyle="0" metaname="tFileInputJSON_1" offsetLabelX="0" offsetLabelY="0" source="tFileInputJSON_1" target="tCassandraOutput_1">
+    <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
+      <elementValue elementRef="TRACE_COLUMN" value="siteId"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="siteName"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="siteStatus"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="eqSerialNumber"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="eqName"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="eqModel"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="eqDate"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="kWpDC"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="totalActivePower"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="dcVoltage"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="groundFaultResistance"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="powerLimit"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="totalEnergy"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="temperature"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="inverterMode"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="acCurrent"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="acVoltage"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="acFrequency"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="apparentPower"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="activePower"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="cosPhi"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="loadId"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="loadDate"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row1" show="false"/>
+  </connection>
+  <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tFileInputJSON_1" offsetLabelX="0" offsetLabelY="0" source="tFileInputJSON_1" target="tFileInputJSON_2">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnSubjobOk2" show="false"/>
+  </connection>
+  <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tCassandraOutput_1" offsetLabelX="0" offsetLabelY="0" source="tCassandraOutput_1" target="tWarn_2">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnComponentOk5" show="false"/>
+  </connection>
+  <connection connectorName="COMPONENT_ERROR" label="OnComponentError" lineStyle="5" metaname="tCassandraOutput_1" offsetLabelX="0" offsetLabelY="0" source="tCassandraOutput_1" target="tJava_1">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnComponentError2" show="false"/>
+  </connection>
+  <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tCassandraClose_2" offsetLabelX="0" offsetLabelY="0" source="tCassandraClose_2" target="tFixedFlowInput_1">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnSubjobOk6" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="row2" lineStyle="0" metaname="tFileInputJSON_2" offsetLabelX="0" offsetLabelY="0" source="tFileInputJSON_2" target="tCassandraOutput_2">
+    <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
+      <elementValue elementRef="TRACE_COLUMN" value="siteId"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="siteName"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="siteStatus"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="eqSerialNumber"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="eqName"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="eqModel"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="eqDate"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="kWpDC"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="totalActivePower"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="dcVoltage"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="groundFaultResistance"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="powerLimit"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="totalEnergy"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="temperature"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="inverterMode"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="acCurrent"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="acVoltage"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="acFrequency"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="apparentPower"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="activePower"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="cosPhi"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="loadId"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="loadDate"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row2" show="false"/>
+  </connection>
+  <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tCassandraOutput_2" offsetLabelX="0" offsetLabelY="0" source="tCassandraOutput_2" target="tWarn_3">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnComponentOk6" show="false"/>
+  </connection>
+  <connection connectorName="COMPONENT_ERROR" label="OnComponentError" lineStyle="5" metaname="tCassandraOutput_2" offsetLabelX="0" offsetLabelY="0" source="tCassandraOutput_2" target="tJava_2">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnComponentError3" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="row3" lineStyle="0" metaname="tLogCatcher_1" offsetLabelX="0" offsetLabelY="0" source="tLogCatcher_1" target="tLogRow_1">
+    <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
+      <elementValue elementRef="TRACE_COLUMN" value="moment"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="pid"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="root_pid"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="father_pid"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="project"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="job"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="context"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="priority"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="type"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="origin"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="message"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="code"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row3" show="false"/>
+  </connection>
+  <connection connectorName="COMPONENT_ERROR" label="OnComponentError" lineStyle="5" metaname="tLogRow_1" offsetLabelX="0" offsetLabelY="0" source="tLogRow_1" target="tDie_1">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnComponentError1" show="false"/>
+  </connection>
+  <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tLogRow_1" offsetLabelX="0" offsetLabelY="0" source="tLogRow_1" target="tCassandraConnection_2">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnComponentOk4" show="false"/>
+  </connection>
+  <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tWarn_1" offsetLabelX="0" offsetLabelY="0" source="tWarn_1" target="tFileInputJSON_1">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnSubjobOk1" show="false"/>
+  </connection>
+  <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tJava_1" offsetLabelX="0" offsetLabelY="0" source="tJava_1" target="tDie_2">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnSubjobOk3" show="false"/>
+  </connection>
+  <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tJava_2" offsetLabelX="0" offsetLabelY="0" source="tJava_2" target="tDie_3">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnSubjobOk4" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="row4" lineStyle="0" metaname="tFixedFlowInput_1" offsetLabelX="0" offsetLabelY="0" source="tFixedFlowInput_1" target="tBufferOutput_1">
+    <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
+      <elementValue elementRef="TRACE_COLUMN" value="returnStatus"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row4" show="false"/>
+  </connection>
+  <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tBufferOutput_1" offsetLabelX="0" offsetLabelY="0" source="tBufferOutput_1" target="tWarn_5">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnComponentOk7" show="false"/>
+  </connection>
+  <subjob>
+    <elementParameter field="CHECK" name="SHOW_SUBJOB_TITLE" value="true"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tPostjob_1" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="230;100;0"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="255;220;180"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="CHECK" name="SHOW_SUBJOB_TITLE" value="true"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tPrejob_1" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="230;100;0"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="255;220;180"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFileInputJSON_1" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tCassandraConnection_2" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tCassandraClose_2" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFileInputJSON_2" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tLogCatcher_1" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tDie_1" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tWarn_1" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJava_1" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tDie_2" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tWarn_2" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJava_2" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tDie_3" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tWarn_3" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFixedFlowInput_1" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tWarn_5" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+</talendfile:ProcessType>

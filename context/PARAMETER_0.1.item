@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<talendfile:ContextType xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" confirmationNeeded="false" name="Default">
+  <contextParameter comment="" name="api_key" prompt="api_key?" promptNeeded="false" type="id_String" value="9FTH1P402E2LGUQJAPLRZA9DA3FXV1XO"/>
+  <contextParameter comment="" name="siteId" prompt="siteId?" promptNeeded="false" type="id_Integer" value=""/>
+  <contextParameter comment="" name="startTime" prompt="startTime?" promptNeeded="false" type="id_String" value="2015-08-01 12:00:00"/>
+  <contextParameter comment="" name="endTime" prompt="endTime?" promptNeeded="false" type="id_String" value="2015-08-03 12:00:00"/>
+  <contextParameter comment="" name="startDate" prompt="startDate?" promptNeeded="false" type="id_String" value="2015-08-05"/>
+  <contextParameter comment="" name="endDate" prompt="endDate?" promptNeeded="false" type="id_String" value="2015-08-08"/>
+  <contextParameter comment="" name="timeUnit" prompt="timeUnit?" promptNeeded="false" type="id_String" value="DAY"/>
+</talendfile:ContextType>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendJSON="http://www.talend.org/json" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010" xmlns:orgomg.cwm.resource.record="http:///orgomg/cwm/resource/record.ecore">
+  <TalendJSON:JSONFileConnection xmi:id="_sAEgcEf9EeWTjNHxD9Y_BA" name="STAGE_ListSites2" dataPackage="_sAFHgUf9EeWTjNHxD9Y_BA" JSONFilePath="C:/Talent_Workspace/test.json" Encoding="UTF-8">
+    <schema xmi:id="_sAFHgEf9EeWTjNHxD9Y_BA" LimitBoucle="50" AbsoluteXPathQuery="/string/statusCode" flag="ROOT">
+      <schemaTargets xmi:id="_3u_lsEf9EeWTjNHxD9Y_BA" RelativeXPathQuery="." TagName="_"/>
+      <schemaTargets xmi:id="_4JKZMEf9EeWTjNHxD9Y_BA" RelativeXPathQuery="../body" TagName="body"/>
+    </schema>
+  </TalendJSON:JSONFileConnection>
+  <orgomg.cwm.resource.record:RecordFile xmi:id="_sAFHgUf9EeWTjNHxD9Y_BA" name="default" dataManager="_sAEgcEf9EeWTjNHxD9Y_BA">
+    <ownedElement xsi:type="TalendMetadata:MetadataTable" xmi:id="_sAFHgkf9EeWTjNHxD9Y_BA" id="_NyqGoEf9EeWTjNHxD9Y_BA" label="metadata"/>
+  </orgomg.cwm.resource.record:RecordFile>
+</xmi:XMI>

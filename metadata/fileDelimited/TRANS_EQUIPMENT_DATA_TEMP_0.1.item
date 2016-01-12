@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010" xmlns:orgomg.cwm.resource.record="http:///orgomg/cwm/resource/record.ecore">
+  <TalendMetadata:DelimitedFileConnection xmi:id="_5GohEFJQEeW2Vqhrf1Gt1Q" name="TRANS_EQUIPMENT_DATA_TEMP" dataPackage="_5GohEVJQEeW2Vqhrf1Gt1Q" Server="Localhost 127.0.0.1" FilePath="C:/Talent_Workspace/archive/TRANS_EQUIPMENT_DATA_TEMP.csv" Encoding="ISO-8859-15" FieldSeparatorValue="&quot;;&quot;" RowSeparatorValue="&quot;\n&quot;" UseHeader="true" HeaderValue="1" FirstLineCaption="true" EscapeChar="&quot;\&quot;&quot;" TextEnclosure="&quot;\&quot;&quot;"/>
+  <orgomg.cwm.resource.record:RecordFile xmi:id="_5GohEVJQEeW2Vqhrf1Gt1Q" name="default" dataManager="_5GohEFJQEeW2Vqhrf1Gt1Q">
+    <ownedElement xsi:type="TalendMetadata:MetadataTable" xmi:id="_5GpIIFJQEeW2Vqhrf1Gt1Q" id="_j-TccFJQEeW2Vqhrf1Gt1Q" label="TRANS_EQUIPMENT_DATA_SCHEMA">
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_5GpIIVJQEeW2Vqhrf1Gt1Q" label="ID" length="2" talendType="id_Integer" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_5GpIIlJQEeW2Vqhrf1Gt1Q" label="loadId" length="4" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_5GpII1JQEeW2Vqhrf1Gt1Q" label="siteId" length="5" talendType="id_Integer" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_5GpIJFJQEeW2Vqhrf1Gt1Q" label="serialId" length="11" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_5GpIJVJQEeW2Vqhrf1Gt1Q" label="date" length="19" talendType="id_Date" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_5GpIJlJQEeW2Vqhrf1Gt1Q" label="totalActivePower" length="3" precision="2" talendType="id_Float" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_5GpIJ1JQEeW2Vqhrf1Gt1Q" label="dcVoltage" length="5" precision="2" talendType="id_Float" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_5GpIKFJQEeW2Vqhrf1Gt1Q" label="groundFaultResistance" length="6" precision="2" talendType="id_Float" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_5GpIKVJQEeW2Vqhrf1Gt1Q" label="powerLimit" length="5" precision="2" talendType="id_Float" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_5GpIKlJQEeW2Vqhrf1Gt1Q" label="totalEnergy" length="9" precision="2" talendType="id_Float" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_5GpIK1JQEeW2Vqhrf1Gt1Q" label="temperature" length="5" precision="3" talendType="id_Float" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_5GpILFJQEeW2Vqhrf1Gt1Q" label="inverterMode" length="4" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_5GpILVJQEeW2Vqhrf1Gt1Q" label="acCurrent" length="6" precision="5" talendType="id_Float" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_5GpILlJQEeW2Vqhrf1Gt1Q" label="acVoltage" length="5" precision="2" talendType="id_Float" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_5GpIL1JQEeW2Vqhrf1Gt1Q" label="acFrequency" length="5" precision="3" talendType="id_Float" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_5GpIMFJQEeW2Vqhrf1Gt1Q" label="apparentPower" length="3" precision="2" talendType="id_Float" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_5GpIMVJQEeW2Vqhrf1Gt1Q" label="activePower" length="3" precision="2" talendType="id_Float" pattern="&quot;dd-MM-yyyy&quot;"/>
+    </ownedElement>
+  </orgomg.cwm.resource.record:RecordFile>
+</xmi:XMI>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<talendfile:ContextType xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" confirmationNeeded="false" name="Default">
+  <contextParameter comment="" name="transTempFiles" prompt="transTempFiles?" promptNeeded="false" type="id_String" value="C:/_archive/dev/TEMP_TRANS_EQUIPMENT_DATA.csv"/>
+  <contextParameter comment="" name="transCaptureDate" prompt="transCaptureDate?" promptNeeded="false" type="id_String" value="20150903"/>
+  <contextParameter comment="" name="transUseCurrentDate" prompt="transUseCurrentDate?" promptNeeded="false" type="id_Integer" value="1"/>
+</talendfile:ContextType>

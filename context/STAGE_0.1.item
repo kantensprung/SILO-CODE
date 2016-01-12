@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<talendfile:ContextType xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" confirmationNeeded="false" name="Default">
+  <contextParameter comment="" name="apiURL" prompt="apiURL?" promptNeeded="false" type="id_String" value="https://monitoringapi.solaredge.com"/>
+  <contextParameter comment="" name="pathStagingFiles" prompt="pathStagingFiles?" promptNeeded="false" type="id_String" value="C:/_archive/dev"/>
+  <contextParameter comment="" name="apiKey" prompt="apiKey?" promptNeeded="false" type="id_String" value="1ZOS77FUF151Y2OSWOGQHV4IOFDERNK0"/>
+  <contextParameter comment="" name="siteID" prompt="siteID?" promptNeeded="false" type="id_Integer" value="149031"/>
+  <contextParameter comment="" name="useRelativeTimeFrame" prompt="useRelativeTimeFrame?" promptNeeded="false" type="id_Integer" value="1"/>
+  <contextParameter comment="" name="absoluteStartTime" prompt="absoluteStartTime?" promptNeeded="false" type="id_String" value="2015-08-01 12:00:00"/>
+  <contextParameter comment="" name="absoluteEndTime" prompt="absoluteEndTime?" promptNeeded="false" type="id_String" value="2015-08-08 12:00:00"/>
+  <contextParameter comment="" name="relativeStartDateFromNow" prompt="relativeStartDateFromNow?" promptNeeded="false" type="id_Integer" value="-1"/>
+  <contextParameter comment="" name="relativeEndDateFromNow" prompt="relativeEndDateFromNow?" promptNeeded="false" type="id_Integer" value="-0"/>
+  <contextParameter comment="" name="deleteStageFilesOlderThan" prompt="deleteStageFilesOlderThan?" promptNeeded="false" type="id_Integer" value="-600"/>
+  <contextParameter comment="" name="pathApplication" prompt="pathApplication?" promptNeeded="false" type="id_String" value="C:/_archive/dev"/>
+</talendfile:ContextType>

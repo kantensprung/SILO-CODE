@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<talendfile:ContextType xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" confirmationNeeded="false" name="Default">
+  <contextParameter comment="" name="sendMailSMTPHost" prompt="sendMailSMTPHost?" promptNeeded="false" type="id_String" value="mail.irix.intra"/>
+  <contextParameter comment="" name="sendMailSMTPPort" prompt="sendMailSMTPPort?" promptNeeded="false" type="id_String" value="25"/>
+  <contextParameter comment="" name="sendMailTo" prompt="sendMailTo?" promptNeeded="false" type="id_String" value="kasp.silo@irix.ch"/>
+  <contextParameter comment="" name="sendMailFrom" prompt="sendMailFrom?" promptNeeded="false" type="id_String" value="kasp.silo@irix.ch"/>
+</talendfile:ContextType>

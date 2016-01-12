@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<talendfile:ContextType xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" confirmationNeeded="false" name="Default">
+  <contextParameter comment="" name="equipmentData" prompt="equipmentData?" promptNeeded="false" type="id_Integer" value="1"/>
+  <contextParameter comment="" name="equipmentList" prompt="equipmentList?" promptNeeded="false" type="id_Integer" value="1"/>
+  <contextParameter comment="" name="siteEnergy" prompt="siteEnergy?" promptNeeded="false" type="id_Integer" value="1"/>
+  <contextParameter comment="" name="sitePower" prompt="sitePower?" promptNeeded="false" type="id_Integer" value="1"/>
+  <contextParameter comment="" name="siteDetails" prompt="siteDetails?" promptNeeded="false" type="id_Integer" value="1"/>
+</talendfile:ContextType>

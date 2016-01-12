@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<talendfile:ContextType xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" confirmationNeeded="false" name="Default">
+  <contextParameter comment="" name="cassandraServer" prompt="cassandraServer?" promptNeeded="false" type="id_String" value="&quot;localhost&quot;"/>
+  <contextParameter comment="" name="cassandraPort" prompt="cassandraPort?" promptNeeded="false" type="id_String" value="&quot;9042&quot;"/>
+  <contextParameter comment="" name="cassandraKeyspace" prompt="cassandraKeyspace?" promptNeeded="false" type="id_String" value="&quot;silo_dev&quot;"/>
+  <contextParameter comment="" name="loadDate" prompt="loadDate?" promptNeeded="false" type="id_String" value="&quot;20160106&quot;"/>
+  <contextParameter comment="" name="loadUseCurrentDate" prompt="loadUseCurrentDate?" promptNeeded="false" type="id_Integer" value="1"/>
+  <contextParameter comment="" name="elasticHost" prompt="elasticHost?" promptNeeded="false" type="id_String" value="&quot;localhost&quot;"/>
+  <contextParameter comment="" name="elasticPort" prompt="elasticPort?" promptNeeded="false" type="id_Integer" value="9300"/>
+  <contextParameter comment="" name="elasticIndex" prompt="elasticIndex?" promptNeeded="false" type="id_String" value="&quot;test&quot;"/>
+  <contextParameter comment="" name="elasticCollection" prompt="elasticCollection?" promptNeeded="false" type="id_String" value="&quot;silo_dev&quot;"/>
+  <contextParameter comment="" name="elasticCluster" prompt="elasticCluster?" promptNeeded="false" type="id_String" value="&quot;kaspsilo&quot;"/>
+</talendfile:ContextType>
